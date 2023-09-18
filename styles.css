@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+main {
+    text-align: center;
+}
+
+.hero {
+    position: relative;
+    text-align: left;
+}
+
+#image {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.menu {
+    text-align: left;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.menu-category{
+    flex: 1;
+    margin: 0 20px;
+}
+
+.menu-category-1 {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.menu-category-1 h3 {
+    text-align: center;
+    margin: 0 26px;
+}
+
+.menu h3 {
+    margin-top: 0;
+    text-align: left;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding-left: 0;
+   
+}
+.menu-item {
+    font-weight: bold;
+}
+
+.menu-price {
+    float: right;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-icons{
+    size:400px;
+}
