@@ -12,9 +12,38 @@ header {
     padding: 10px 0;
 }
 
+.container-fluid{
+    background: linear-gradient(to left, black, gray, white);
+}
+
+
+.menutxt{
+font-family: 'Times New Roman', Times, serif;
+font-size: large;
+}
+
+/* Add the following styles to your existing styles.css file or in a style block within the head of your HTML */
+
+.hero {
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    top: 25%;
+    left: 0;
+    padding: 20px;
+    /* Adjust the padding as needed */
+    color: white;
+    /* Set the text color to contrast with the image */
+}
+
+
+
 header h1 {
     margin: 0;
 }
+
 
 nav {
     margin-top: 10px;
@@ -25,6 +54,93 @@ nav a {
     color: #fff;
     margin: 0 10px;
 }
+
+h2{
+    margin: auto;
+}
+
+.register{
+    background: linear-gradient(to left, black, gray, white);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 7px;
+    border: 1px solid rgb(61, 106, 255);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background: transparent;
+    color: #fff;
+    overflow: hidden;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+button:hover {
+    background: rgb(61, 106, 255);
+    box-shadow: 0 0 30px 5px rgba(0, 142, 236, 0.815);
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+button:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+}
+
+button::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #fff;
+    box-shadow: 0 0 50px 30px #fff;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+    from {
+        opacity: 0;
+        left: 0%;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        left: 100%;
+    }
+}
+
+button:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+}
+
 
 main {
     text-align: center;
@@ -40,58 +156,9 @@ main {
     height: auto;
 }
 
-.hero-text {
-    position: absolute;
-    top: 50%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 20px;
-    max-width: 80%;
-    border-radius: 10px;
-}
 
-.menu {
-    text-align: left;
-    margin: 20px;
-    padding: 20px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-.menu-category{
-    flex: 1;
-    margin: 0 20px;
-}
 
-.menu-category-1 {
-    flex: 1;
-    margin: 0 20px;
-}
 
-.menu-category-1 h3 {
-    text-align: center;
-    margin: 0 26px;
-}
-
-.menu h3 {
-    margin-top: 0;
-    text-align: left;
-}
-
-.menu ul {
-    list-style-type: none;
-    padding-left: 0;
-   
-}
-.menu-item {
-    font-weight: bold;
-}
-
-.menu-price {
-    float: right;
-}
 
 footer {
     background-color: #333;
@@ -100,6 +167,19 @@ footer {
     padding: 10px 0;
 }
 
-.social-icons{
-    size:400px;
+.social-icons {
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.social-icons a {
+    border: 1px solid #fff;
+    padding: 10px;
+    margin: 5px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+background-color: #000;
 }
